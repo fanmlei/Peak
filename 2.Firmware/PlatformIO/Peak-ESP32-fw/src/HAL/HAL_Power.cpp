@@ -7,7 +7,7 @@ static uint32_t Power_LastHandleTime = 0;
 static uint16_t Power_AutoLowPowerTimeout = 60;
 
 /*自动关机功能使能*/
-static bool Power_AutoLowPowerEnable = false;
+static bool Power_AutoLowPowerEnable = true;
 
 static bool Power_IsShutdown = false;
 
@@ -16,7 +16,7 @@ static uint16_t Power_ADCValue_last[10] = {4095};
 
 static HAL::Power_CallbackFunction_t Power_EventCallback = NULL;
 
-#define BATT_MAX_VOLTAGE    3900
+#define BATT_MAX_VOLTAGE    3700
 #define BATT_MIN_VOLTAGE    3300
 
 
